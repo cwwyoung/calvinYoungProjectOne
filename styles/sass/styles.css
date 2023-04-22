@@ -271,7 +271,8 @@ h2 span {
   font-family: "Rubik", sans-serif;
 }
 
-.collections button {
+.collections button,
+.contact button {
   height: auto;
   text-transform: uppercase;
   color: white;
@@ -399,7 +400,7 @@ h5 {
 footer {
   background-image: url(./../../assets/footer.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 1.5rem;
 }
@@ -438,6 +439,8 @@ h6 {
   flex-direction: column;
   padding: 4rem 0;
   width: calc(30% - 1rem);
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .footerColInner {
@@ -446,6 +449,8 @@ h6 {
   padding: 4rem 0;
   width: calc(20% - 1rem);
   align-items: flex-start;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .socials {
@@ -468,4 +473,102 @@ h6 {
   margin: 0 auto;
   border-top: 1px solid #abd373;
   width: 75%;
+}
+
+/* contact.html */
+.contactHeader {
+  background-image: url(./../../assets/contact-header.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 23vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactHeader h4 {
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 2px 5px lightgray;
+  max-width: 1200px;
+  width: 90%;
+  margin: 5rem auto;
+}
+
+.contactSide {
+  background-image: url(./../../assets/contact.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  width: 25%;
+}
+
+.contactText {
+  font-family: "Rubik", sans-serif;
+  padding: 2rem;
+}
+
+.contactText p {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
+.contactForm {
+  width: 75%;
+}
+
+fieldset {
+  border: none;
+}
+
+.contactForm input {
+  width: calc(45% - 2rem);
+  padding: 1rem;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  margin: 1rem;
+}
+
+.contactForm textarea {
+  font-style: italic;
+  width: calc(100% - 8rem);
+  margin: 1rem;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  padding: 1rem;
+}
+
+.formButton {
+  text-align: right;
+  margin-top: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 10rem;
+}
+
+.formButton button {
+  border-radius: 1rem;
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+:-moz-placeholder {
+  font-style: italic;
+}
+
+::-moz-placeholder {
+  font-style: italic;
+}
+
+:-ms-input-placeholder {
+  font-style: italic;
 }
