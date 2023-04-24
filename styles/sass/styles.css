@@ -14,11 +14,9 @@
   color: white;
   text-transform: uppercase;
 }
-
 .banner ul {
   display: flex;
 }
-
 .banner li {
   color: white;
   padding-left: 2rem;
@@ -36,15 +34,12 @@ nav {
   align-items: center;
   padding: 4rem 0;
 }
-
 nav a {
   color: black;
 }
-
 nav ul {
   display: flex;
 }
-
 nav li {
   padding: 0 2rem;
   font-size: 2rem;
@@ -55,118 +50,6 @@ nav li {
   width: 2rem;
 }
 
-@media (min-width: 480px) {
-  .burger,
-.mobileTitle {
-    display: none;
-  }
-}
-@media (max-width: 480px) {
-  .banner,
-.banner li {
-    font-size: 1.25rem;
-  }
-  nav ul {
-    display: none;
-  }
-  h2 {
-    font-size: 2rem;
-    margin: 0 auto;
-  }
-  h2::before,
-h2::after {
-    display: none;
-  }
-  .heroImage {
-    display: none;
-  }
-  .heroText {
-    width: 100%;
-    text-align: center;
-  }
-  .heroText p {
-    font-size: 1.5rem;
-  }
-  .heroText h1 {
-    font-size: 3rem;
-  }
-  .heroText span {
-    font-size: 2rem;
-  }
-  .heroText button {
-    padding: 1rem;
-    margin: 0 auto;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-  }
-  .moneyStuffContainer {
-    flex-direction: column;
-  }
-  .moneyStuffContainer img {
-    display: none;
-  }
-  .moneyStuffContainer h3 {
-    font-size: 1.5rem;
-  }
-  .plantCard {
-    width: 50%;
-  }
-  .collectionsTop {
-    flex-direction: column;
-    align-items: center;
-  }
-  .twoThirds,
-.oneThird {
-    width: 80%;
-  }
-  .cactusCollectionText {
-    text-align: center;
-    padding: 3rem;
-  }
-  .collectionsBottom {
-    display: none;
-  }
-  .latestPosts p {
-    font-size: 1rem;
-  }
-  .blogPosts {
-    flex-wrap: wrap;
-  }
-  .blogCard {
-    width: 100%;
-    margin: 1rem 0;
-  }
-  .footerWrapper {
-    flex-wrap: wrap;
-  }
-  .footerColOuter {
-    width: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-  }
-  .footerColInner {
-    width: calc(30% - 2rem);
-    margin: 0 auto;
-    padding: 1rem;
-  }
-  footer {
-    background-image: none;
-  }
-  .contact {
-    flex-direction: column;
-  }
-  .contactHeader {
-    background-size: auto;
-  }
-  .contactSide,
-.contactForm {
-    width: 100%;
-  }
-  .contactForm input,
-.contactForm textarea {
-    width: 90%;
-  }
-}
 /* hero */
 .heroWrapper {
   background-color: #F8EEE5;
@@ -179,14 +62,13 @@ h2::after {
   width: 90%;
   margin: 0 auto;
 }
+.hero p {
+  font-size: 2.5rem;
+}
 
 .sale {
   font-weight: 300;
   font-size: 6rem;
-}
-
-.hero p {
-  font-size: 2.5rem;
 }
 
 .heroText {
@@ -216,6 +98,16 @@ h2::after {
   width: 90%;
   margin: 0 auto;
 }
+.collections p {
+  font-size: 1.5rem;
+}
+.collections h4 {
+  font-size: 4rem;
+  margin: 1rem 0;
+}
+.collections span {
+  display: block;
+}
 
 .collections button,
 .contact button {
@@ -229,19 +121,6 @@ h2::after {
   text-align: center;
   font-size: 2rem;
   margin-top: 1.5rem;
-}
-
-.collections p {
-  font-size: 1.5rem;
-}
-
-.collections h4 {
-  font-size: 4rem;
-  margin: 1rem 0;
-}
-
-.collections span {
-  display: block;
 }
 
 .collectionsTop,
@@ -295,11 +174,9 @@ h2::after {
   font-size: 1.5rem;
   font-weight: 400;
 }
-
 .gallery p {
   margin: 0.5rem 0;
 }
-
 .gallery p span {
   color: #abd373;
   margin-top: 0;
@@ -421,11 +298,9 @@ h2::after {
   width: 33.3%;
   margin: 5rem auto;
 }
-
 .latestPosts img {
   max-width: 100%;
 }
-
 .latestPosts p {
   font-size: 2rem;
   margin: 5rem auto;
@@ -477,16 +352,13 @@ footer {
   background-size: 100%;
   font-size: 1.5rem;
 }
-
 footer ul {
   padding-left: 0;
 }
-
 footer a {
   color: black;
   font-weight: 300;
 }
-
 footer p {
   padding-right: 1rem;
   font-weight: 300;
@@ -532,7 +404,6 @@ h6 {
   height: 2rem;
   margin-top: 1rem;
 }
-
 .socials img {
   border: 1px solid black;
   padding: 0.5rem;
@@ -558,7 +429,6 @@ h6 {
   justify-content: center;
   align-items: center;
 }
-
 .contactHeader h4 {
   text-transform: uppercase;
   font-size: 4rem;
@@ -671,4 +541,131 @@ p {
 a {
   text-decoration: none;
   color: white;
+}
+
+@media (min-width: 480px) {
+  .burger {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .banner,
+.banner li {
+    font-size: 1.25rem;
+    padding: 1rem;
+  }
+  nav ul {
+    display: none;
+  }
+  h2 {
+    font-size: 2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  h2::before,
+h2::after {
+    display: none;
+  }
+  .hero {
+    justify-content: center;
+  }
+  .heroImage {
+    display: none;
+  }
+  .heroText {
+    width: 100%;
+    text-align: center;
+  }
+  .heroText p {
+    font-size: 1.5rem;
+  }
+  .heroText h1 {
+    font-size: 3rem;
+  }
+  .heroText span {
+    font-size: 2rem;
+  }
+  .heroText button {
+    padding: 1rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .moneyStuffContainer {
+    flex-direction: column;
+    margin: 1rem auto;
+  }
+  .moneyStuffContainer img {
+    display: none;
+  }
+  .moneyStuffContainer h3 {
+    font-size: 1.5rem;
+  }
+  .plantCard {
+    width: 50%;
+  }
+  .collectionsTop {
+    flex-direction: column;
+    align-items: center;
+  }
+  .twoThirds,
+.oneThird {
+    width: 80%;
+  }
+  .cactusCollectionText {
+    text-align: center;
+    padding: 3rem;
+  }
+  .collectionsBottom {
+    display: none;
+  }
+  .latestPosts {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .latestPosts p {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .blogPosts {
+    flex-wrap: wrap;
+  }
+  .blogPosts img {
+    display: none;
+  }
+  .blogCard {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .footerWrapper {
+    flex-wrap: wrap;
+  }
+  .footerColOuter {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .footerColInner {
+    width: calc(30% - 2rem);
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  footer {
+    background-image: none;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .contactHeader {
+    background-size: auto;
+  }
+  .contactSide,
+.contactForm {
+    width: 100%;
+  }
+  .contactForm input,
+.contactForm textarea {
+    width: 90%;
+  }
 }

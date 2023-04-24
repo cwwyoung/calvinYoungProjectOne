@@ -1,5 +1,6 @@
 /* gallery */
 @use "./variables" as *;
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -8,16 +9,15 @@
     margin: 0 auto;
     font-size: 1.5rem;
     font-weight: 400;
+    p {
+        margin: 0.5rem 0;
+    }
+    p span {
+        color: $mainGreen;
+        margin-top: 0;
+    }
 }
 
-.gallery p {
-    margin: 0.5rem 0;
-}
-
-.gallery p span {
-    color: $mainGreen;
-    margin-top: 0;
-}
 .shoppingCart {
     height: 2rem;
     

@@ -14,17 +14,14 @@
     font-size: 2rem;
     color: white;
     text-transform: uppercase;
-}
-
-.banner ul {
-    display: flex;
-    
-}
-
-.banner li {
-    color: white;
-    padding-left: 2rem;
-    font-size: 2rem;
+    ul {
+        display: flex;
+    }
+    li {
+        color: white;
+        padding-left: 2rem;
+        font-size: 2rem;
+    }
 }
 
 /* top nav */
@@ -38,19 +35,16 @@ nav {
     text-transform: uppercase;
     align-items: center;
     padding: 4rem 0;
-}
-
-nav a {
-    color: black;
-}
-
-nav ul {
-    display: flex;
-}
-
-nav li {
-    padding: 0 2rem;
-    font-size: 2rem;
+    a {
+        color: black;
+    }
+    ul {
+        display: flex;
+    }
+    li {
+        padding: 0 2rem;
+        font-size: 2rem;
+    }
 }
 
 .navBag {

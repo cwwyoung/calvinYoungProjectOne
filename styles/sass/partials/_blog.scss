@@ -3,20 +3,16 @@
 .latestPosts {
     width: 33.3%;
     margin: 5rem auto;
+    img {
+        max-width: 100%;
+    }
+    p {
+        font-size: 2rem;
+        margin: 5rem auto;
+        text-align: center;
+        line-height: 2rem;
+    }
     
-}
-
-.latestPosts img {
-    max-width: 100%;
-    
-}
-
-.latestPosts p {
-    font-size: 2rem;
-    margin: 5rem auto;
-
-    text-align: center;
-    line-height: 2rem;
 }
 
 .blogPosts {

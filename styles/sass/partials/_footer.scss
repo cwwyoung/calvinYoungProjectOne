@@ -5,21 +5,20 @@ footer {
     background-repeat: no-repeat;
     background-size: 100%;
     font-size: 1.5rem;
+    ul {
+        padding-left: 0;
+    }
+    a {
+        color: black;
+        font-weight: 300;
+    }
+    p {
+        padding-right: 1rem;
+        font-weight: 300;
+    }
     
 }
 
-footer ul{
-   padding-left: 0;
-}
-
-footer a {
-    color: black;
-    font-weight: 300;
-}
-footer p{
-    padding-right: 1rem;
-    font-weight: 300;
-}
 h6 {
     margin: 2rem 0;
     font-size: 1.75rem;
@@ -58,14 +57,13 @@ h6 {
     justify-content: flex-start;
     height: 2rem;
     margin-top: 1rem;
-}
-
-.socials img {
+    img {
     border: 1px solid black;
     padding: 0.5rem;
     margin: 0 1rem 0 0;
     height: 1.5rem;
     width: 1.5rem;
+}
 }
 
 .copyright {
@@ -85,12 +83,12 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    h4 {
+        text-transform: uppercase;
+        font-size: 4rem;
+    }
 }
 
-.contactHeader h4 {
-    text-transform: uppercase;
-    font-size: 4rem;
-}
 .contact {
     display: flex;
     justify-content: center;
@@ -99,6 +97,7 @@ h6 {
     width: 90%;
     margin: 5rem auto;
 }
+
 .contactSide {
     background-image: url(./../../assets/contact.jpg);
     background-repeat: no-repeat;
@@ -141,7 +140,6 @@ border-top-style: hidden;
 border-right-style: hidden;
 border-left-style: hidden;
 padding: 1rem;
-
 }
 
 .formButton {

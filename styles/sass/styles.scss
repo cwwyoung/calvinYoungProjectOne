@@ -1,7 +1,6 @@
 
 @use "./partials/variables" as *;
 @use "./partials/header";
-@use "./partials/mediaQueries";
 @use "./partials/hero";
 @use "./partials/collections";
 @use "./partials/gallery";
@@ -9,6 +8,7 @@
 @use "./partials/products";
 @use "./partials/blog";
 @use "./partials/footer";
+
 
 * {
     list-style: none;  
@@ -36,10 +36,142 @@ a {
     color: white;
 }
 
+@media (min-width: 480px) {
+    .burger {
+        display: none;
+    }
+    }
+        
+    
+@media (max-width: 480px) {
+    
+        .banner,
+        .banner li {
+            font-size: 1.25rem;
+            padding: 1rem;
+        }
+        nav ul {
+            display: none;
+        }
+        h2 {
+            font-size: 2rem;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+        h2::before,
+        h2::after {
+        display: none;
+    }
+        .hero {
+            justify-content: center;
+        }
+        .heroImage {
+            display: none;
+        }
+        .heroText {
+            width: 100%;
+            text-align: center;
+            p {
+                font-size: 1.5rem;
+            }
+            h1 {
+                font-size: 3rem;
+            }
+            span {
+                font-size: 2rem;
+            }
+            button {
+                padding: 1rem;
+                margin: 0 auto;
+                margin-bottom: 1rem;
+                font-size: 1.5rem;
+            }
+        }
+    
+        .moneyStuffContainer {
+            flex-direction: column;
+            margin: 1rem auto;
+            img {
+                display: none;
+            }
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+    
+        
+        .plantCard {
+            width: 50%;
+        }
+    
+        .collectionsTop {
+            flex-direction: column;
+            align-items: center;
+        }
+        .twoThirds,
+        .oneThird {
+            width: 80%;
+        }
+        .cactusCollectionText {
+            text-align: center;
+            padding: 3rem;
+        }
+        .collectionsBottom {
+            display: none;
+        }
+        .latestPosts {
+            margin: 0 auto;
+            width: 90%;
+        }
+        .latestPosts p {
+            font-size: 1rem;
+            margin: 0 auto;
+        }
+        .blogPosts {
+            flex-wrap: wrap;
+        }
 
-
-
-
+        .blogPosts img {
+            display: none;
+        }
+        .blogCard  {
+            width: 100%;
+            margin: 1rem 0;
+        }
+        .footerWrapper {
+            flex-wrap: wrap;
+        }
+        .footerColOuter {
+            width: 100%;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .footerColInner {
+            width: calc(30% - 2rem);
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        
+        footer {
+            background-image: none;
+        }
+        .contact {
+            flex-direction: column;
+        }
+        .contactHeader {
+            background-size: auto;
+        }
+        .contactSide,
+        .contactForm {
+            width: 100%
+        }
+    
+        .contactForm input,
+        .contactForm textarea {
+            width: 90%;
+        }
+    }
 
 
 
