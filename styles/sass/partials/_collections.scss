@@ -1,0 +1,72 @@
+/* collections */
+@use "./variables" as *;
+.collections {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.collections button,
+.contact button {
+    height: auto;
+    text-transform: uppercase;
+    color: white;
+    background-color: $mainGreen;
+    border: none;
+    border-radius: 3rem;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+.collections p {
+    font-size: 1.5rem;
+}
+
+.collections h4 {
+    font-size: 4rem;
+    margin: 1rem 0;
+}
+
+.collections span {
+    display: block;
+}
+.collectionsTop,
+.collectionsBottom {
+    display: flex;
+    margin-top: 3rem;;
+}
+.twoThirds {
+    width: 66%;
+    
+}
+
+.oneThird {
+    width: 33%;
+}
+.cactusCollection {
+    background-image: url(./../../assets/b1.jpeg);
+    background-repeat: no-repeat;
+    
+}
+.cactusCollectionText,
+.plantPortText {
+    padding: 5rem;
+}
+
+.plantPort {
+    background-image: url(./../../assets/b2.jpeg);
+    
+    background-repeat: no-repeat;
+}
+
+.plantPortText {
+    text-align:center;
+}
+
+.collectionsBottom.plantPort {
+    background-image: url(./../../assets/b3.jpeg);
+}
+.collectionsBottom .cactusCollection {
+    background-image: url(./../../assets/b4.jpeg);
+}

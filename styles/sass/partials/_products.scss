@@ -1,0 +1,48 @@
+@use "./variables" as *;
+
+/* products */
+
+.products {
+    margin: 0 auto;
+    width: 33.3%;
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%; 
+    margin: 0 auto;
+}
+
+h2::before,
+h2::after {
+    content:"—";
+    color: $mainGreen;
+}
+
+
+.productButtons {
+    display: flex;
+    justify-content: center;
+}
+
+.productButtonContainerSelected {
+    border: 1px dashed $mainGreen;
+    border-radius: 2px;
+    padding: 1rem 2rem;
+    margin: 2rem;
+    color: $mainGreen;
+    
+}
+
+.productButtonContainer {
+    border: 1px solid #95979d61;
+    border-radius: 2px;
+    padding: 1rem 2rem;
+    margin: 2rem;
+    color: black;
+}

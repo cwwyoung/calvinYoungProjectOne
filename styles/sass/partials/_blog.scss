@@ -1,0 +1,58 @@
+/*posts*/
+@use "./variables" as *;
+.latestPosts {
+    width: 33.3%;
+    margin: 5rem auto;
+    
+}
+
+.latestPosts img {
+    max-width: 100%;
+    
+}
+
+.latestPosts p {
+    font-size: 2rem;
+    margin: 5rem auto;
+
+    text-align: center;
+    line-height: 2rem;
+}
+
+.blogPosts {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    
+    line-height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.blogCard {
+    width: 30%;
+    background-color: #f6f7fb;
+    border-radius: 2rem;
+}
+
+.blogCard span {
+    text-transform: uppercase;
+    color: $mainGreen;
+}
+
+.blogCardContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+.blogCardContainer img {
+    margin-top: 3rem;
+}
+
+h5 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}

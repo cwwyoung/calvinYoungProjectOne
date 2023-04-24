@@ -1,0 +1,39 @@
+/* gallery */
+@use "./variables" as *;
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.gallery p {
+    margin: 0.5rem 0;
+}
+
+.gallery p span {
+    color: $mainGreen;
+    margin-top: 0;
+}
+.shoppingCart {
+    height: 2rem;
+    
+}
+
+.cartContainer {
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid white;
+    padding: 0.25rem;
+    padding-bottom: 0;
+    box-shadow: 2px 2px 5px lightgray;
+    margin: 0.5rem;
+}
+.plantCard {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}

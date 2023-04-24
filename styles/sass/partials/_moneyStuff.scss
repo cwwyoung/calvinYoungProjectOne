@@ -1,0 +1,46 @@
+/* money stuff */
+@use "./variables" as *;
+.moneyStuff {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.moneyStuff h3 {
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+}
+
+.moneyStuff p {
+    font-size: 1.5rem;
+}
+
+
+.moneyStuffContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.shipping,
+.payment,
+.services {
+    display: flex;
+    border: 1px dashed $mainGreen;
+    border-radius: 2px;
+}
+
+.shippingImg,
+.paymentImg,
+.servicesImg {
+    padding: 3rem 0rem 3rem 3rem;
+
+}
+
+.shippingText,
+.paymentText,
+.servicesText {
+    padding: 3rem;
+}

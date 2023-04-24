@@ -1,0 +1,59 @@
+/* top banner */
+@use "./variables" as *;
+
+.wrapper {
+    background-color: $mainGreen;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.banner ul {
+    display: flex;
+    
+}
+
+.banner li {
+    color: white;
+    padding-left: 2rem;
+    font-size: 2rem;
+}
+
+/* top nav */
+
+nav {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+nav a {
+    color: black;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    padding: 0 2rem;
+    font-size: 2rem;
+}
+
+.navBag {
+    height: 2rem;
+    width: 2rem;
+}

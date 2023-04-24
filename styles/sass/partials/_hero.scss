@@ -1,0 +1,43 @@
+/* hero */
+@use "./variables" as *;
+
+.heroWrapper {
+    background-color: #F8EEE5;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.sale {
+    font-weight: 300;
+    font-size: 6rem;
+}
+
+.hero p {
+    font-size: 2.5rem;
+}
+
+.heroText {
+    width: 50%
+}
+
+.heroText button {
+    height: auto;
+    text-transform: uppercase;
+    color: white;
+    background-color: $mainGreen;
+    border: none;
+    border-radius: 3rem;
+    padding: 2.5rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.heroImage {
+    width: 50%;
+}
