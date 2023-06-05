@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <header>
     <div class="wrapper">
@@ -141,6 +142,28 @@
                 <p>2023 Pronia</p>
             </div>
     </footer>
+    <script>
+        const input = document.querySelectorAll('input');
+        const button = document.querySelector('.formButton')
+        button.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            let isEmpty = false;
+
+            input.forEach(input => {
+                if (input.value === "") {
+                    isEmpty = true;
+                }
+            });
+
+            if (isEmpty === true) {
+                alert('Please fill out all information before posting!');
+            } else {
+                alert('Thank you for your comment!')
+            }
+        })
+
+    </script>
 </body>
 
 </html>

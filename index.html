@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bb6b8f0e34.js" crossorigin="anonymous"></script>
-    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -35,7 +34,11 @@
                 <li><a href="./contact.html">Contact Us</a></li>
             </ul>
             <div class="burger"><i class="fa-solid fa-bars" style="color: #000000;"></i></div>
-
+            <ul class="menu hidden">
+                <li><a class="menuItem" href="#">Home</a></li>
+                <li><a class="menuItem" href="#">Blog</a></li>
+                <li><a class="menuItem" href="#">Contact Us</a></li>
+            </ul>
             <div class="navBag">
                 <img src="./assets/icons/shopping-bag.svg" alt="shopping bag" />
             </div>
@@ -127,54 +130,88 @@
         </div>
         <div class="plantCard">
             <div class="insideCard">
-                <a href="javascript:void(0)"><img src="./assets/p1.jpeg" alt="black eyed susan"></a>
+                <a href="javascript:void(0)"><img src="./assets/p1.jpeg" alt="black eyed susan" class="openModal"></a>
                 <div class="cartContainer"><img src="./assets/icons/cart.svg" class="shoppingCart"
                         alt="shopping cart icon" style="height: 2rem;" /></div>
+                <i class="hidden fa-sharp fa-solid fa-x "></i>
                 <p>Black Eyed Susan</p>
+                <p class="desc hidden">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque quos
+                    reprehenderit sint odit et sed! Vitae enim placeat debitis delectus labore.</p>
                 <p><span class="price">$25.45</span></p>
             </div>
         </div>
         <div class="plantCard">
-            <a href="javascript:void(0)"><img src="./assets/p3.jpeg" alt="bleeding heart"></a>
-            <div class="cartContainer"><img src="./assets/icons/cart.svg" class="shoppingCart" alt="shopping cart icon"
-                    style="height: 2rem;" /></div>
-            <p>Bleeding Heart</p>
-            <p><span class="price">$30.45</span></p>
+            <div class="insideCard">
+                <a href="javascript:void(0)"><img src="./assets/p3.jpeg" alt="bleeding heart" class="openModal"></a>
+                <div class="cartContainer"><img src="./assets/icons/cart.svg" class="shoppingCart"
+                        alt="shopping cart icon" style="height: 2rem;" /></div>
+                <i class="hidden fa-sharp fa-solid fa-x "></i>
+                <p>Bleeding Heart</p>
+                <p class="desc hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quod,
+                    sapiente et quidem.</p>
+                <p><span class="price">$30.45</span></p>
+            </div>
         </div>
         <div class="plantCard">
-            <a href="javascript:void(0)"><img src="./assets/p4.jpeg" alt="bloody cranesbill"></a>
-            <div class="cartContainer"><img src="./assets/icons/cart.svg" class="shoppingCart" alt="shopping cart icon"
-                    style="height: 2rem;" /></div>
-            <p>Bloody Cranesbill</p>
-            <p><span class="price">$45.00</span></p>
+            <div class="insideCard">
+                <a href="javascript:void(0)"><img src="./assets/p4.jpeg" alt="bloody cranesbill" class="openModal"></a>
+                <div class="cartContainer"><img src="./assets/icons/cart.svg" class="shoppingCart"
+                        alt="shopping cart icon" style="height: 2rem;" /></div>
+                <i class="hidden fa-sharp fa-solid fa-x "></i>
+                <p>Bloody Cranesbill</p>
+                <p class="desc hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat exercitationem
+                    expedita hic. Nam amet quos debitis! Accusantium.</p>
+                <p><span class="price">$45.00</span></p>
+            </div>
         </div>
         <div class="plantCard">
-            <a href="javascript:void(0)"><img src="./assets/p5.jpeg" alt="butterfly weed"></a>
-            <div class="cartContainer"><img src="./assets/icons/cart.svg" class="shoppingCart" alt="shopping cart icon"
-                    style="height: 2rem;" /></div>
-            <p>Butterly Weed</p>
-            <p><span class="price">$50.45</span></p>
+            <div class="insideCard">
+                <a href="javascript:void(0)"><img src="./assets/p5.jpeg" alt="butterfly weed" class="openModal"></a>
+                <div class="cartContainer"><img src="./assets/icons/cart.svg" class="shoppingCart"
+                        alt="shopping cart icon" style="height: 2rem;" /></div>
+                <i class="hidden fa-sharp fa-solid fa-x "></i>
+                <p>Butterly Weed</p>
+                <p class="desc hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla eius incidunt ex
+                    error voluptates!</p>
+                <p><span class="price">$50.45</span></p>
+            </div>
         </div>
         <div class="plantCard">
-            <a href="javascript:void(0)"><img src="./assets/p6.jpeg" alt="common yarrow"></a>
-            <div class="cartContainer"><img src="./assets/icons/cart.svg" class="shoppingCart" alt="shopping cart icon"
-                    style="height: 2rem;" /></div>
-            <p>Common Yarrow</p>
-            <p><span class="price">$65.00</span></p>
+            <div class="insideCard">
+                <a href="javascript:void(0)"><img src="./assets/p6.jpeg" alt="common yarrow" class="openModal"></a>
+                <div class="cartContainer"><img src="./assets/icons/cart.svg" class="shoppingCart"
+                        alt="shopping cart icon" style="height: 2rem;" /></div>
+                <i class="hidden fa-sharp fa-solid fa-x "></i>
+                <p>Common Yarrow</p>
+                <p class="desc hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, inventore.
+                    Officia nesciunt consequuntur veniam quis, sint, aspernatur, laborum dolorum ad officiis odio unde
+                    doloribus repellat quibusdam optio? Corporis, voluptate. Aut.</p>
+                <p><span class="price">$65.00</span></p>
+            </div>
         </div>
         <div class="plantCard">
-            <a href="javascript:void(0)"><img src="./assets/p7.jpeg" alt="doublefile viburnum"></a>
-            <div class="cartContainer"><img src="./assets/icons/cart.svg" class="shoppingCart" alt="shopping cart icon"
-                    style="height: 2rem;" /></div>
-            <p>Doublefile Viburnum</p>
-            <p><span class="price">$67.45</span></p>
+            <div class="insideCard">
+                <a href="javascript:void(0)"><img src="./assets/p7.jpeg" alt="doublefile viburnum"
+                        class="openModal"></a>
+                <div class="cartContainer"><img src="./assets/icons/cart.svg" class="shoppingCart"
+                        alt="shopping cart icon" style="height: 2rem;" /></div>
+                <i class="hidden fa-sharp fa-solid fa-x "></i>
+                <p>Doublefile Viburnum</p>
+                <p class="desc hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quae!</p>
+                <p><span class="price">$67.45</span></p>
+            </div>
         </div>
         <div class="plantCard">
-            <a href="javascript:void(0)"><img src="./assets/p8.jpeg" alt="feather reed grass"></a>
-            <div class="cartContainer"><img src="./assets/icons/cart.svg" class="shoppingCart" alt="shopping cart icon"
-                    style="height: 2rem;" /></div>
-            <p>Feather Reed Grass</p>
-            <p><span class="price">$20.00</span></p>
+            <div class="insideCard">
+                <a href="javascript:void(0)"><img src="./assets/p8.jpeg" alt="feather reed grass" class="openModal"></a>
+                <div class="cartContainer"><img src="./assets/icons/cart.svg" class="shoppingCart"
+                        alt="shopping cart icon" style="height: 2rem;" /></div>
+                <i class="hidden fa-sharp fa-solid fa-x "></i>
+                <p>Feather Reed Grass</p>
+                <p class="desc hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptas sunt
+                    necessitatibus sapiente officia maiores ducimus, nam veritatis quos.</p>
+                <p><span class="price">$20.00</span></p>
+            </div>
         </div>
     </section>
     <section class="collections">
@@ -315,7 +352,7 @@
             </div>
 
     </footer>
-
+    <script src="script.js" defer></script>
 </body>
 
 </html>
